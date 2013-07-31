@@ -17,6 +17,8 @@ angular.module('svgApp')
         // });
         svg.load('/svg/map-test.svg', 'get', function(mapdata) {        
           console.log("LOAD DONE", arguments)
+          // $('#2555-cityPlan').hidden();
+          $('svg').svgPan('viewport');
         })
       }
     }
